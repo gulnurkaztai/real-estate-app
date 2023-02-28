@@ -11,6 +11,7 @@ import { db } from '../firebase.config'
 
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg'
 import visibilityIcon from '../assets/svg/visibilityIcon.svg'
+import OAuth from '../components/OAuth'
 
 function SignUp() {
   console.log(db)
@@ -107,7 +108,7 @@ function SignUp() {
             </div>
           </form>
   
-
+<OAuth/>
   
           <Link to='/sign-in' className='registerLink'>
             Sign In Instead
